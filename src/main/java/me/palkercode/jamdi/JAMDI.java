@@ -18,7 +18,7 @@ public final class JAMDI extends JavaPlugin {
         try {
             MessageListener.InitializeDML();
         } catch (InterruptedException e) {
-            System.out.println("!!!Your discord token in invalid!!!");
+            System.out.println("!!!Your discord token is invalid!!!");
             throw new RuntimeException(e);
         }
 
