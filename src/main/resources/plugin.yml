@@ -1,0 +1,4 @@
+name: JustAnotherMinecraftDiscordIntegration
+version: '${project.version}'
+main: me.palkercode.jamdi.JAMDI
+api-version: 1.19
