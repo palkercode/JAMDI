@@ -9,7 +9,7 @@ public final class JAMDI extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        getConfig().addDefault("bot-token", "YOUR DISCORD TOKEN HERE");
+        getConfig().addDefault("bot-token", "YOUR DISCORD BOT TOKEN HERE");
         getConfig().addDefault("channel-id", "1234567890");
 
         botToken = getConfig().getString("bot-token");
