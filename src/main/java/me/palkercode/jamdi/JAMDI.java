@@ -4,9 +4,13 @@ import me.palkercode.jamdi.listeners.MessageListener;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class JAMDI extends JavaPlugin {
+public class JAMDI extends JavaPlugin {
     public static String botToken;
     public static String channelId;
+
+    public static String discordToMinecraftFormat;
+    public static String minecraftToDiscordFormat;
+
     @Override
     public void onEnable() {
         saveDefaultConfig();
@@ -15,6 +19,9 @@ public final class JAMDI extends JavaPlugin {
 
         botToken = getConfig().getString("bot-token");
         channelId = getConfig().getString("channel-id");
+
+        discordToMinecraftFormat = getConfig().getString("discord-to-minecraft-message-format");
+        minecraftToDiscordFormat = getConfig().getString("minecraft-to-discord-message-format");
 
         try {
             MessageListener.InitializeDML();

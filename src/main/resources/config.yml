@@ -1,3 +1,5 @@
 bot-token: "YOUR DISCORD BOT TOKEN HERE"
 channel-id: "1234567890"
 
+discord-to-minecraft-message-format: "<§9%discord-nickname%§f> %discord-message%"
+minecraft-to-discord-message-format: "<%minecraft-nickname%> %minecraft-message%"
